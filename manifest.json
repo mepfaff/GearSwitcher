@@ -1,6 +1,6 @@
 {
   "name": "GearSwitcher",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Saves your windows for later so you can switch gears",
 
     "browser_action": {
