@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GearSwitcher Popup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"/>
+  <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+  <link type="text/css" rel="stylesheet" href="css/colors.css"/>
+</head>
+
+<body>
+  <div id="mybody">
+    <div id="mylist" class="container-fluid">
+	</div> 
+  </div>
+
+  <!-- 
+    dropdown input from 
+    http://www.tutorialspoint.com/bootstrap/bootstrap_input_groups.htm 
+  -->
+  <div id="myfooter"> 
+    <form class="bs-example bs-example-form" role="form">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">  
+            <div id="saveRow" class="input-group-btn dropup">
+              
+			  <button id="save" type="button" class="btn savebtn" 
+                     tabindex="-1">Save</button>  
+              <button id="go" type="button" class="btn dropdown-toggle savebtn" 
+                     data-toggle="dropdown" tabindex="-1">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>  
+			  <ul class="dropdown-menu">
+                <li><a href="#" id="delAll">Delete All</a></li>
+              </ul> 
+			  
+            </div><!-- /btn-group -->
+		   <input placeholder="New Gear" id="gearinput" type="text" 
+			class="form-control">    
+		  </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 --><br>   
+      </div><!-- /.row -->
+    </form>
+  
+  </div> <!-- myfooter -->
+
+  <script src="jquery-1.11.3.js"></script>
+  <script src="/bootstrap/js/bootstrap.min.js"></script>
+  <script src="popup.js"></script>  
+</body>
+</html>

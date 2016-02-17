@@ -1,0 +1,14 @@
+{
+  "name": "GearSwitcher",
+  "version": "1.0",
+  "description": "Saves your windows for later so you can switch gears",
+
+    "browser_action": {
+      "default_title": "GearSwitcher",
+      "default_icon": "gearicon.png",
+      "default_popup": "popup.html"
+  },
+  "author": "Molly Pfaff",
+  "permissions": ["tabs", "storage"],
+  "manifest_version": 2
+}

@@ -1,0 +1,61 @@
+html {
+  width: 270px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+
+  background-color: #fffff;
+}
+
+
+.container-fluid{
+  height: 275px;
+  overflow-y: auto;
+}
+
+
+#mylist{
+  /* info from http://matthewjamestaylor.com/blog/keeping-footers-at-the-bottom-of-the-page */
+  padding-bottom:34px;   /* Height of the footer */
+}
+
+#myfooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 34px;
+  z-index: 50;
+  padding-top: 2px;
+}
+
+
+.gear-sm {
+  width: 202px;
+  text-align: left;
+}
+
+.gear-lg {
+  width: 221px;
+  text-align: left;
+}
+
+.geardrop{
+  width:50px;
+}
+
+.geardrop, .gear-lg, .gear-sm {
+  padding: 11px;
+  border-radius: 0;
+}
+
+#save {
+  z-index: 1070;
+}
+
+#renameBtn {
+  z-index: 1070;
+}
+
