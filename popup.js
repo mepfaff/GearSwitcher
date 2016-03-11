@@ -100,7 +100,10 @@ function createRow(i, gearData){
     // Set dropup (instead of dropdown) for last row
     if (gearData.gears.length === i + 1 && i > 2){
         row.setAttribute("class", "row btn-group dropup");
-    } else {
+    } else if (gearData.gears.length === 5 && i === 3){
+		row.setAttribute("class", "row btn-group dropup");
+	} 
+	else {
         row.setAttribute("class", "row btn-group");
     }
     row.setAttribute("id", "row" + i);
